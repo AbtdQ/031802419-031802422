@@ -14,15 +14,24 @@
 ## dataProc.js
 
 - getTreeJSON(rawInput)
-  - 给定单颗树的输入，返回 JSON 字符串
+  - 给定单颗树的输入，返回 JSON 对象
 
 - getForestJSON(rawInput)
-  - 给定原始输入，返回包含所有树 JSON 的字符串数组
+  - 给定原始输入，返回包含所有树 JSON 的数组
+
+- getSkillJSON(rawInput)
+  - 给定单个技能树的输入，返回技能树 JSON 对象
+
+- isTree(rawInput)
+  - 判断输入是否是师门树
+
+- AddSkills(treeJSON, skillJSON)
+  - 将技能树数组中的技能作为子节点添加到树中
 
 ## tree.js
 
 - insertTree(treeJSON, parentElemID)
-  - 根据给定的 JSON 字符串 treeJSON ，在文档指定父元素下绘制相应的树
+  - 根据给定的 treeJSON ，在文档指定父元素下绘制相应的树
   - 插入的树的 id 会被加入 treeIDs[]
   - 返回插入的树的 id
 
