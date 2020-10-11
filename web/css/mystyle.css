@@ -10,6 +10,9 @@
             filter: blur(15px);
     z-index: -1;
 }
-.list-group-item.node-tree_0{
+/*.list-group-item.node-tree_0{
     background-color:rgba(0,0,0,0);
+}*/
+[class*="list-group-item"]{
+    background-color:rgba(0,0,0,0) !important;
 }
