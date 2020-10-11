@@ -25,7 +25,7 @@
 - isTree(rawInput)
   - 判断输入是否是师门树
 
-- AddSkills(treeJSON, skillJSON)
+- AddSkillsToTree(treeJSON, skillsJSON)
   - 将技能树数组中的技能作为子节点添加到树中
 
 ## tree.js
