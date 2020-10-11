@@ -19,8 +19,10 @@
 
 ## tree.js
 
-- insertTree(root, id, parentElemID)
-  - 根据给定的 JSON 字符串 root，在文档指定父元素下绘制相应的树
+- insertTree(treeJSON, parentElemID)
+  - 根据给定的 JSON 字符串 treeJSON ，在文档指定父元素下绘制相应的树
+  - 插入的树的 id 会被加入 treeIDs[]
+  - 返回插入的树的 id
 
 - removeTree(id)
   - 删除指定树
