@@ -1,3 +1,4 @@
+// 给定单颗树的输入，返回 JSON 对象
 function getTreeJSON(rawInput) {
     const rows = rawInput.split("\n");
     const groupNodes = [];
@@ -14,6 +15,7 @@ function getTreeJSON(rawInput) {
     return treeJSON;
 }
 
+// 给定原始输入，返回包含所有树 JSON 的数组
 function getForestJSON(rawInput) {
     const treeRawInputs = rawInput.split("\n\n");
     const forestJSON = [];
@@ -35,6 +37,7 @@ function getForestJSON(rawInput) {
     return forestJSON;
 }
 
+// 给定单个技能树的输入，返回技能树 JSON 对象
 function getSkillJSON(rawInput) {
     const names = rawInput.split(/[：、]/);
     const skillNodes = [];
@@ -45,10 +48,12 @@ function getSkillJSON(rawInput) {
     return skillJSON;
 }
 
+// 判断输入是否是师门树
 function isTree(rawInput) {
     return rawInput.includes("导师：");
 }
 
+// 将技能树数组中的技能作为子节点添加到树中
 function AddSkillsToTree(treeJSON, skillsJSON) {
     for (const skill of skillsJSON) {
         for (const grp of treeJSON["nodes"]) {
