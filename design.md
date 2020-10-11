@@ -6,8 +6,8 @@
   - 从指定元素获取输入并开始处理过程
   - 绑定 创建树 按钮
 
-- removeForest()
-  - 删除所有树
+- clear()
+  - 清空输入并删除所有树
 
 ## dataProc.js
 
@@ -24,8 +24,11 @@
   - 插入的树的 id 会被加入 treeIDs[]
   - 返回插入的树的 id
 
-- removeTree(id)
-  - 删除指定树
+- removeAllTrees()
+  - 删除所有树
+
+- newTreeID()
+  - 创建新的 tree ID ，存入 treeIDs 并返回之
 
 - treeIDs[]
   - 储存所有树的 id
