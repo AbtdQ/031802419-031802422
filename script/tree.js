@@ -20,9 +20,9 @@ function insertTree(treeJSON, parentElemID) {
             selectedBackColor: "#418bca",
             searchResultColor: "#ffe747",
             onhoverColor: "#2c61ac",
-            expandIcon: 'glyphicon glyphicon-hand-right',
-            collapseIcon: 'glyphicon glyphicon-hand-down',
-            emptyIcon: 'glyphicon glyphicon-user',
+            //expandIcon: 'glyphicon glyphicon-hand-right',
+            //collapseIcon: 'glyphicon glyphicon-hand-down',
+            //emptyIcon: 'glyphicon glyphicon-user',
             showBorder: true,
             data: [treeJSON]
         }
@@ -31,4 +31,9 @@ function insertTree(treeJSON, parentElemID) {
 }
 
 function removeAllTrees() {
+    for (const id of treeIDs) {
+        const treeElem = document.getElementById(idPrefix + id);
+        treeElem.remove();
+    }
+    treeIDs.length = 0;
 }

@@ -2,12 +2,14 @@
 
 ## ui.js
 
-- showForest(elemID)
-  - 从指定元素获取输入并开始处理过程
-  - 绑定 创建树 按钮
+- addForest(elemID)
+  - 从指定元素获取输入并向页面添加新树
 
-- clear()
-  - 清空输入并删除所有树
+- clearInput(InputElemID)
+  - 清空输入框
+
+- clearForest()
+  - 清空所有树
 
 ## dataProc.js
 
