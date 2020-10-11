@@ -16,3 +16,15 @@
 [class*="list-group-item"]{
     background-color:rgba(0,0,0,0) !important;
 }
+
+#text{
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+    padding: 0px 0px;
+    height: 110px;
+    font-size: 13px;
+    font-family: "Microsoft soft";
+    margin-top: 2%;
+    margin-left: 35%; width: 400px;
+}
