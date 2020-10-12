@@ -55,7 +55,7 @@ Javascript 是一门极富特色的语言，~~与 Java 的关系好比雷锋和�
 
 包含用于直接绑定界面控件的函数
 
-- addForest(elemID)
+- addForest(inputElemID, outputElemID)
   - 从指定元素获取输入并向页面添加新树
 
 - clearInput(InputElemID)
