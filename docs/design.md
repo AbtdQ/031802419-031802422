@@ -2,7 +2,7 @@
 
 ## ui.js
 
-- addForest(elemID)
+- addForest(inputElemID, outputElemID)
   - 从指定元素获取输入并向页面添加新树
 
 - clearInput(InputElemID)
