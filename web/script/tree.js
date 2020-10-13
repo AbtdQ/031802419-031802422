@@ -1,5 +1,5 @@
 // 储存所有树的 id
-const treeIDs = [];
+const treeIDs = new Set();
 
 // 返回树在 DOM 中的元素 id
 function treeIDinDOM(treeID) {
@@ -8,8 +8,11 @@ function treeIDinDOM(treeID) {
 
 // 创建新的 tree ID ，存入 treeIDs 并返回之
 function newTreeID() {
-    let id = treeIDs.length;
-    treeIDs.push(id);
+    let id = Math.floor(Math.random() * 1000);
+    while (treeIDs.has(id)) {
+        id++;
+    }
+    treeIDs.add(id);
     return id;
 }
 
@@ -41,11 +44,17 @@ function insertTree(treeJSON, parentElemID) {
     return id;
 }
 
+// 删除特定树
+function removeTree(treeID)
+{
+    const treeElem = document.getElementById(treeIDinDOM(treeID));
+    treeElem.remove();
+    treeIDs.delete(treeID);
+}
+
 // 删除所有树
 function removeAllTrees() {
     for (const id of treeIDs) {
-        const treeElem = document.getElementById(treeIDinDOM(id));
-        treeElem.remove();
+        removeTree(id);
     }
-    treeIDs.length = 0;
 }

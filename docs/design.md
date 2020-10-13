@@ -39,6 +39,9 @@
 - removeAllTrees()
   - 删除所有树
 
+- removeTree(treeID)
+  - 删除特定树
+
 - newTreeID()
   - 创建新的 tree ID ，存入 treeIDs 并返回之
 
