@@ -32,8 +32,9 @@
 
 - insertTree(treeJSON, parentElemID)
   - 根据给定的 treeJSON ，在文档指定父元素下绘制相应的树
-  - 插入的树的 id 会被加入 treeIDs[]
-  - 返回插入的树的 id
+  - 调用 newTreeID() 为新树生成一 tree ID 并加入 treeIDs[]
+  - 新树在 DOM 中的 id 为 treeIDinDOM(treeID)
+  - 返回插入的树的 tree ID
 
 - removeAllTrees()
   - 删除所有树
@@ -42,4 +43,7 @@
   - 创建新的 tree ID ，存入 treeIDs 并返回之
 
 - treeIDs[]
-  - 储存所有树的 id
+  - 储存所有树的 tree ID
+
+- treeIDinDOM(treeID)
+  - 返回树在 DOM 中的元素 id
