@@ -11,6 +11,9 @@
 - clearForest()
   - 清空所有树
 
+- buttonRemoveTree(treeID, thisButton)
+  - 删除特定树，然后删除按钮自身
+
 ## dataProc.js
 
 - getTreeJSON(rawInput)
