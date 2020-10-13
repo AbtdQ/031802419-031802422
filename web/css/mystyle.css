@@ -33,33 +33,25 @@
     width: 30%;
     height: 100px;
 }
-#button1{
-    border-radius: 30px 12px 12px 30px;
-    border-color: #c44e79 ;
+.button{
+    font-family: "'微软雅黑','Helvetica Neue',Helvetica,Arial,sans-serif";
+	font-size: 13px!important;
+    min-height: 30px;
+    height: fit-content;
+    width: 10%;
+	line-height: 18px!important;
+	padding: 3px 18px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: normal;
+	border-radius: 3px;
+	margin: 0 8px 0 3px;
+	border: 1px solid #c44e79;
+	color: #ffffff;
+	background-color: #c44e79;
+	cursor: pointer;
+}
+.button:hover{
+    background-color: rgba(0,0,0,0);
     color: #c44e79;
-    width: 100px;
-    height: 30px;
-}
-#button1:hover{
-    background-color:rgba(0,0,0,0)
-}
-#button2{
-    border-radius: 12px 12px 12px 12px;
-    border-color: #c44e79 ;
-    color: #c44e79;
-    width: 90px;
-    height: 30px;
-}
-#button2:hover{
-    background-color:rgba(0,0,0,0)
-}
-#button3{
-    border-radius: 12px 30px 30px 12px;
-    border-color: #c44e79 ;
-    color: #c44e79;
-    width: 100px;
-    height: 30px;
-}
-#button3:hover{
-    background-color:rgba(0,0,0,0)
 }
