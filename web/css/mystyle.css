@@ -17,6 +17,10 @@
     background-color:rgba(0,0,0,0) !important;
 }
 
+#ctrlBox {
+    text-align: center;
+}
+
 #text{
     outline-style: none ;
     border: 1px solid #ccc; 
@@ -25,8 +29,9 @@
     height: 110px;
     font-size: 13px;
     font-family: "Microsoft soft";
-    margin-top: 2%;
-    margin-left: 35%; width: 400px;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
 }
 #button1{
     border-radius: 30px 12px 12px 30px;
