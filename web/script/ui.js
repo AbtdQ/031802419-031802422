@@ -4,7 +4,7 @@ function addForest(inputElemID, outputElemID) {
     const forestJSON = getForestJSON(rawInput);
     for (const treeJSON of forestJSON) {
         const treeID = insertTree(treeJSON, outputElemID);
-        $(`<button type="button" class="button" onclick="buttonRemoveTree(${treeID})">删除</button>`)
+        $(`<button type="button" class="button button-tree button-del" onclick="buttonRemoveTree(${treeID})">删除</button>`)
             .prependTo("#" + treeIDinDOM(treeID));
     }
 }
