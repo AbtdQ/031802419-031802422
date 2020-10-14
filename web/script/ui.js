@@ -4,11 +4,8 @@ function addForest(inputElemID, outputElemID) {
     const forestJSON = getForestJSON(rawInput);
     for (const treeJSON of forestJSON) {
         const treeID = insertTree(treeJSON, outputElemID);
-        const treeElem = document.getElementById(treeIDinDOM(treeID));
-        treeElem.insertAdjacentHTML(
-            "afterbegin",
-            `<button type="button" class="button" onclick="buttonRemoveTree(${treeID})">删除</button>`
-        );
+        $(`<button type="button" class="button" onclick="buttonRemoveTree(${treeID})">删除</button>`)
+            .prependTo("#" + treeIDinDOM(treeID));
     }
 }
 
