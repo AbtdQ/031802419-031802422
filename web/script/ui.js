@@ -3,7 +3,9 @@ function addForest(inputElemID, outputElemID) {
     const rawInput = document.getElementById(inputElemID).value.trim();
     const forestJSON = getForestJSON(rawInput);
     for (const treeJSON of forestJSON) {
-        insertTree(treeJSON, outputElemID);
+        const treeID = insertTree(treeJSON, outputElemID);
+        $(`<button type="button" class="button button-tree button-del" onclick="buttonRemoveTree(${treeID})">删除</button>`)
+            .prependTo("#" + treeIDinDOM(treeID));
     }
 }
 
@@ -16,4 +18,9 @@ function clearInput(inputElemID) {
 // 清空所有树
 function clearForest() {
     removeAllTrees();
+}
+
+// 删除特定树
+function buttonRemoveTree(treeID) {
+    removeTree(treeID);
 }

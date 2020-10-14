@@ -56,3 +56,12 @@
     color: #ffffff;
     border: 1px solid #c44e79;
 }
+
+.button-tree {
+    margin-bottom: 10px;
+}
+
+.button-del:hover {
+    background-color: red;
+    border: red;
+}
