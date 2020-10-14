@@ -11,8 +11,8 @@
 - clearForest()
   - 清空所有树
 
-- buttonRemoveTree(treeID, thisButton)
-  - 删除特定树，然后删除按钮自身
+- buttonRemoveTree(treeID)
+  - 删除特定树
 
 ## dataProc.js
 
@@ -36,7 +36,9 @@
 - insertTree(treeJSON, parentElemID)
   - 根据给定的 treeJSON ，在文档指定父元素下绘制相应的树
   - 调用 newTreeID() 为新树生成一 tree ID 并加入 treeIDs[]
-  - 新树在 DOM 中的 id 为 treeIDinDOM(treeID)
+  - 插入的 DOM 结构如下
+    - div id=treeIDinDOM(treeID)
+      - div class="treeview"
   - 返回插入的树的 tree ID
 
 - removeAllTrees()

@@ -6,8 +6,8 @@ function addForest(inputElemID, outputElemID) {
         const treeID = insertTree(treeJSON, outputElemID);
         const treeElem = document.getElementById(treeIDinDOM(treeID));
         treeElem.insertAdjacentHTML(
-            "beforebegin",
-            `<button type="button" class="button" onclick="buttonRemoveTree(${treeID}, this)">删除</button>`
+            "afterbegin",
+            `<button type="button" class="button" onclick="buttonRemoveTree(${treeID})">删除</button>`
         );
     }
 }
@@ -24,7 +24,6 @@ function clearForest() {
 }
 
 // 删除特定树
-function buttonRemoveTree(treeID, thisButton) {
+function buttonRemoveTree(treeID) {
     removeTree(treeID);
-    thisButton.remove();
 }

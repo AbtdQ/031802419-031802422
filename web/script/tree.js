@@ -23,11 +23,9 @@ function newTreeID() {
 function insertTree(treeJSON, parentElemID) {
     const id = newTreeID();
     const idInDOM = treeIDinDOM(id);
-    const parentElem = document.getElementById(parentElemID);
-    const treeDiv = document.createElement("div");
-    treeDiv.id = idInDOM;
-    parentElem.appendChild(treeDiv);
-    $("#" + idInDOM).treeview(
+    $(`<div id="${idInDOM}"></div>`).appendTo("#" + parentElemID);
+    $('<div></div>').appendTo("#" + idInDOM);
+    $(`#${idInDOM} > div`).treeview(
         {
             color: "#ffffff",
             backColor: "#366bb6",
